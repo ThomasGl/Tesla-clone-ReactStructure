@@ -7,6 +7,11 @@ export const Container = styled.div`
     overflow-y: scroll;
 `;
 
-export const OverlayRoot = styled.div``
+export const OverlaysRoot = styled.div`
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+`
 
-export const ModelOverlay = styled.div``

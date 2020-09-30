@@ -21,11 +21,13 @@ const ModelsSection: React.FC<Props> = ({
 
   useEffect(() => {
     if(sectionRef.current){
-      registerModel( {modelName, overlayNode, sectionRef})
+      registerModel( {modelName, overlayNode, sectionRef} )
     }
   }, [modelName, overlayNode, registerModel])
 
-  return <Container {...props}>{children}</Container>
+  return <Container ref={sectionRef} {...props}>
+    {children}
+    </Container>
 };
 
 export default ModelsSection;
